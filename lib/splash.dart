@@ -2,7 +2,12 @@ import 'dart:async';
 
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
-import 'package:myprojectfeb/loginn.dart';
+import 'package:myprojectfeb/citiesUI.dart';
+import 'package:myprojectfeb/home.dart';
+import 'package:myprojectfeb/stack.dart';
+
+import 'bottomnavbar.dart';
+
 
 void main() {
   runApp(DevicePreview(
@@ -25,7 +30,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Timer(Duration(seconds: 3),(){Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>LoginValid()));
+    Timer(const Duration(seconds: 1),(){Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> Cities()));
     });
 
 
