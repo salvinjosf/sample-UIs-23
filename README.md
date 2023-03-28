@@ -1,4 +1,4 @@
-# sampleUIdesign
+# Login and SignUp UI design
 
 ![Urban](https://user-images.githubusercontent.com/124342493/225305443-4c4cc5b6-9d83-4c9d-971e-33fb3c8a50f8.png)
 
@@ -14,6 +14,8 @@
 
 Contact Book UI
 
-
 ![Screenshot_2023-03-17_133231-removebg-preview](https://user-images.githubusercontent.com/124342493/225848356-08267ad5-7fde-45b0-a590-e44f0f8d8772.png)
 
+Hotel Booking UI
+
+![Hotel_UI](https://user-images.githubusercontent.com/124342493/228221646-aa070c2e-2bf7-433b-96c2-826163445b7d.png)
