@@ -18,4 +18,4 @@ Contact Book UI
 
 Hotel Booking UI
 
-![Hotel_UI](https://user-images.githubusercontent.com/124342493/228221646-aa070c2e-2bf7-433b-96c2-826163445b7d.png)
+![Hotel_UI](https://user-images.githubusercontent.com/124342493/228519967-bf537a66-4e39-4db4-81d3-1c2cef5287c8.png)
