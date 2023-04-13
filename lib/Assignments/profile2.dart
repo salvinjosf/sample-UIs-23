@@ -76,9 +76,9 @@ class profile2 extends StatelessWidget {
               child: Column(
                 children: const [
                   Text(
-                    'Jack Durden', style: TextStyle(fontSize: 30, fontWeight: FontWeight.w700),),
+                    'Jack', style: TextStyle(fontSize: 30, fontWeight: FontWeight.w700),),
                 Text(
-                    'Business', style: TextStyle(fontSize: 12),),
+                    'Business Coordinator', style: TextStyle(fontSize: 12),),
                 ],
               ),
             ),

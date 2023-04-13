@@ -67,35 +67,38 @@ class GridDs extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Grid Assignmnet'),
         ),
-        body: GridView.builder(
-            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              childAspectRatio: 2,
-              crossAxisSpacing: 10,
-              mainAxisSpacing: 20
-            ),
-            itemBuilder: (context, index){
-              return Padding(
-                padding: const EdgeInsets.only(top: 20.0, left: 10, right: 20),
-                child: Container(
-                  decoration: BoxDecoration(
-                    boxShadow: const [
-                      BoxShadow(
-                        color: Colors.blueGrey,
-                        blurRadius: 5,
-                        spreadRadius: 6,
-                      )
-                    ], borderRadius: BorderRadius.circular(20), color: color[index]
-                  ),
-                  child: Center(
-                    child: ListTile(
-                      title: Text(name[index]),
-                      leading: Icon(icons[index]),
+        body: Container(
+          color: Colors.pink[50],
+          child: GridView.builder(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2,
+                childAspectRatio: 2,
+                crossAxisSpacing: 10,
+                mainAxisSpacing: 20
+              ),
+              itemBuilder: (context, index){
+                return Padding(
+                  padding: const EdgeInsets.only(top: 20.0, left: 10, right: 20),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      boxShadow: const [
+                        BoxShadow(
+                          color: Colors.blueGrey,
+                          blurRadius: 5,
+                          spreadRadius: 6,
+                        )
+                      ], borderRadius: BorderRadius.circular(20), color: color[index]
+                    ),
+                    child: Center(
+                      child: ListTile(
+                        title: Text(name[index]),
+                        leading: Icon(icons[index]),
+                      ),
                     ),
                   ),
-                ),
-              );
-            },itemCount: color.length,
+                );
+              },itemCount: color.length,
+          ),
         ),
     );
   }
