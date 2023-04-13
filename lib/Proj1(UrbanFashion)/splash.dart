@@ -2,18 +2,19 @@ import 'dart:async';
 
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
-import 'package:myprojectfeb/citiesUI.dart';
+import 'package:myprojectfeb/Assignments/citiesUI.dart';
 import 'package:myprojectfeb/gglnavbar.dart';
 import 'package:myprojectfeb/grid1.dart';
 import 'package:myprojectfeb/grid2.dart';
 import 'package:myprojectfeb/grid3.dart';
 import 'package:myprojectfeb/grid5.dart';
-import 'package:myprojectfeb/home.dart';
-import 'package:myprojectfeb/hotelui.dart';
+import 'package:myprojectfeb/Proj1(UrbanFashion)/home.dart';
+import 'package:myprojectfeb/Assignments/hotelui.dart';
+import 'package:myprojectfeb/Proj1(UrbanFashion)/loginn.dart';
 import 'package:myprojectfeb/stack.dart';
 
-import 'bottomnavbar.dart';
-import 'grid4.dart';
+import '../bottomnavbar.dart';
+import '../grid4.dart';
 
 
 void main() {
@@ -37,7 +38,8 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Timer(const Duration(seconds: 1),(){Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> Hotel()));
+    Timer(const Duration(seconds: 3),(){Navigator.pushReplacement(
+        context, MaterialPageRoute(builder: (context)=>LoginValid()));
     });
 
 

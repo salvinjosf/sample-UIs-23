@@ -1,7 +1,7 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
-import 'package:myprojectfeb/home.dart';
-import 'package:myprojectfeb/signupp.dart';
+import 'package:myprojectfeb/Proj1(UrbanFashion)/home.dart';
+import 'package:myprojectfeb/Proj1(UrbanFashion)/signupp.dart';
 
 void main() {
   runApp(DevicePreview(
@@ -120,7 +120,7 @@ class _LoginValidState extends State<LoginValid> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => SignUpValid()));
+                              builder: (context) => HomeScreen()));
                     },
                     style:
                         TextButton.styleFrom(

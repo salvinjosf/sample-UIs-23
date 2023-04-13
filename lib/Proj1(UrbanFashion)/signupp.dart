@@ -1,6 +1,7 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
-import 'package:myprojectfeb/loginn.dart';
+import 'package:myprojectfeb/Proj1(UrbanFashion)/home.dart';
+import 'package:myprojectfeb/Proj1(UrbanFashion)/loginn.dart';
 
 void main() {
   runApp(DevicePreview(
@@ -30,6 +31,7 @@ class _SignUpValidState extends State<SignUpValid> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Container(
+          height: MediaQuery.of(context).size.height,
           decoration: const BoxDecoration(
               image: DecorationImage(
                   fit: BoxFit.fill, image: AssetImage('assets/bg2.png'))),
@@ -173,7 +175,7 @@ class _SignUpValidState extends State<SignUpValid> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => LoginValid()));
+                                  builder: (context) => HomeScreen()));
                         }
                   },
                       style: ElevatedButton.styleFrom(

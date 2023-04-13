@@ -1,8 +1,22 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
+import 'package:myprojectfeb/grid3.dart';
+import 'package:myprojectfeb/grid5.dart';
 import 'package:myprojectfeb/listseperator.dart';
-import 'package:myprojectfeb/signupp.dart';
+import 'package:myprojectfeb/lottieani.dart';
+import 'package:myprojectfeb/Proj1(UrbanFashion)/signupp.dart';
 
 import 'loginn.dart';
+void main() {
+  runApp(DevicePreview(
+    builder: (BuildContext context) => MaterialApp(
+      useInheritedMediaQuery: true,
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: HomeScreen(),
+      debugShowCheckedModeBanner: false,
+    ),
+  ));
+}
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -63,13 +77,13 @@ class HomeScreen extends StatelessWidget {
           backgroundColor: Colors.brown[400],
         ),
         body: TabBarView(children: [
-          SignUpValid(),
+          LottieeAni(),
           ListSep(),
-          LoginValid(),
+          Grid3(),
           Container(
             decoration: const BoxDecoration(
                 image: DecorationImage(
-                    fit: BoxFit.fill,
+                    fit: BoxFit.fitHeight,
                     image: AssetImage('assets/app backgroud.png'))),
             child: Center(
               child: Column(
@@ -77,8 +91,8 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   Image.asset(
                     'assets/Logo2.png',
-                    height: 260,
-                    width: 290,
+                    height: 200,
+                    width: 190,
                   )
                 ],
               ),

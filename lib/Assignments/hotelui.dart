@@ -1,11 +1,28 @@
 import 'package:flutter/material.dart';
+import 'package:device_preview/device_preview.dart';
 
+
+void main() {
+  runApp(DevicePreview(
+    builder: (BuildContext context) => MaterialApp(
+      useInheritedMediaQuery: true,
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: Hotel(),
+      debugShowCheckedModeBanner: false,
+    ),
+  ));
+}
 class Hotel extends StatelessWidget {
   // const Hotel({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      bottomNavigationBar: BottomNavigationBar(items: const [
+        BottomNavigationBarItem(icon: Icon(Icons.search_rounded),label: 'Search'),
+        BottomNavigationBarItem(icon: Icon(Icons.favorite_border_rounded), label: 'Favourites'),
+        BottomNavigationBarItem(icon: Icon(Icons.settings),label: "Settings"),
+      ]),
       body: SingleChildScrollView(
         child: Stack(
           children: [
