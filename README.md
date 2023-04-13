@@ -17,4 +17,4 @@ Hotel Booking UI
 ![Hotel_UI](https://user-images.githubusercontent.com/124342493/228519967-bf537a66-4e39-4db4-81d3-1c2cef5287c8.png)
 
 Cardex UI
-![grid_dash](https://user-images.githubusercontent.com/124342493/231738497-30656d1f-38ed-410a-806b-37a5638afb66.png)
+![grid_dash](https://user-images.githubusercontent.com/124342493/231740288-e3b73939-f134-494f-a1b2-31464fa54c18.png)
