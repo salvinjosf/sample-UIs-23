@@ -26,3 +26,9 @@ Profile UI
 
 ![Profile1](https://user-images.githubusercontent.com/124342493/231741590-71fe845b-1258-4708-a684-bee21578e331.png)
 ![Profile2](https://user-images.githubusercontent.com/124342493/231743075-1fc11d73-5b51-4a24-aeb5-d767355316ab.png)
+
+
+Playlist UI
+
+![Playlist](https://user-images.githubusercontent.com/124342493/231745395-52043a16-b42f-4471-887a-68dc11921c5c.png)
+
