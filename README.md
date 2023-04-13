@@ -2,8 +2,6 @@
 
 ![Urban](https://user-images.githubusercontent.com/124342493/225305443-4c4cc5b6-9d83-4c9d-971e-33fb3c8a50f8.png)
 
-# screenshots
-
 ![Splash](https://user-images.githubusercontent.com/124342493/225305582-97c2d579-4983-4f8a-8f93-8337f1d9517a.png)
 ![Login](https://user-images.githubusercontent.com/124342493/225305589-88f7ae02-38cb-4344-a040-98628490bbe5.png)
 ![Signup](https://user-images.githubusercontent.com/124342493/225305613-aa54d195-292e-43e0-80fe-e4b53bc9e775.png)
