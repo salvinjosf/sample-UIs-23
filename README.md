@@ -22,6 +22,7 @@ Cardex UI
 
 ![grid_dash](https://user-images.githubusercontent.com/124342493/231740288-e3b73939-f134-494f-a1b2-31464fa54c18.png)
 
-Profile1 UI
+Profile UI
 
 ![Profile1](https://user-images.githubusercontent.com/124342493/231741590-71fe845b-1258-4708-a684-bee21578e331.png)
+![Profile2](https://user-images.githubusercontent.com/124342493/231743075-1fc11d73-5b51-4a24-aeb5-d767355316ab.png)
