@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'Qdata.dart';
@@ -30,20 +31,25 @@ class Qlist extends StatelessWidget {
         padding: const EdgeInsets.all(15.0),
         child: ListView(
           children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Card(
-                  color: Colors.grey[850],
-                  child: ListTile(
-                      title: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      '${product['description']}',
-                      style:
-                          const TextStyle(fontSize: 23,
-                              color: Colors.white70),
-                    ),
-                  ))),
+            Row(mainAxisAlignment: MainAxisAlignment.start,
+              children: const [
+                Icon(FontAwesomeIcons.quoteLeft,size: 60,color: Colors.greenAccent,),
+              ],
+            ),
+            ListTile(
+                title: Padding(
+              padding: const EdgeInsets.all(5.0),
+              child: Text(
+                '${product['description']}',
+                style:
+                    const TextStyle(fontSize: 20,
+                        color: Colors.white70,),
+              ),
+            )),
+            Row(mainAxisAlignment: MainAxisAlignment.end,
+              children: const [
+                Icon(FontAwesomeIcons.quoteRight,size: 60,color: Colors.greenAccent,),
+              ],
             ),
           ],
         ),
