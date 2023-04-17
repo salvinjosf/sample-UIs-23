@@ -28,7 +28,8 @@ Profile UI
 ![Profile2](https://user-images.githubusercontent.com/124342493/231743075-1fc11d73-5b51-4a24-aeb5-d767355316ab.png)
 
 
-Playlist UI
+Music App UI
 
 ![Playlist](https://user-images.githubusercontent.com/124342493/231745395-52043a16-b42f-4471-887a-68dc11921c5c.png)
+![musify](https://user-images.githubusercontent.com/124342493/232546826-3a34efc4-ecca-4055-bdb5-c3e5055c2b84.png)
 
