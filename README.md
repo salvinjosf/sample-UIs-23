@@ -14,9 +14,10 @@ Contact Book UI
 
 ![Screenshot_2023-03-17_133231-removebg-preview](https://user-images.githubusercontent.com/124342493/225848356-08267ad5-7fde-45b0-a590-e44f0f8d8772.png)
 
-Hotel Booking UI
+Hotel UI
 
 ![Hotel_UI](https://user-images.githubusercontent.com/124342493/228519967-bf537a66-4e39-4db4-81d3-1c2cef5287c8.png)
+![Hotel home](https://user-images.githubusercontent.com/124342493/232762305-a0084427-c4d8-4086-af93-dd7fff685174.png)
 
 Cardex UI
 
