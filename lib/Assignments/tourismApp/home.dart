@@ -37,19 +37,19 @@ class TourismHome extends StatelessWidget {
         ),
       ),
       body: ListView(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(5),
         children: datapage.map((page) {
           return Padding(
             padding: const EdgeInsets.all(5.0),
             child: InkWell(
               onTap: () => goto(context, page['id']),
               child: ClipRRect(
-                borderRadius: BorderRadius.circular(20),
+                borderRadius: BorderRadius.circular(10),
                 child: Stack(
                   children: [
                     Image.network(
                       '${page['cover']}',
-                      fit: BoxFit.fill,
+                      fit: BoxFit.cover,height: MediaQuery.of(context).size.height*.18,width:MediaQuery.of(context).size.width*1,
                     ),
                     Positioned(
                         bottom: 20,

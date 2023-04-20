@@ -9,24 +9,42 @@ class second extends StatelessWidget {
     final secondpage = datapage.firstWhere((page) => page['id'] == id);
 
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.purple[900],
-      ),
       body: Padding(
-        padding: const EdgeInsets.all(10.0),
-        child: ListView(,
+        padding: const EdgeInsets.all(8.0),
+        child: ListView(
           children: [
             ClipRRect(
                 borderRadius: BorderRadius.circular(20),
-                child: Image.network('${secondpage['cover']}')),
-            const SizedBox(height: 20,),
-            Text('${secondpage['name']}', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),),
-            const SizedBox(height: 30,),
-            Text('${secondpage['description']}'),
-            SizedBox(height: 10,),
-            const Text('Places to Visit',style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),),
+                child: Image.network(
+                  '${secondpage['cover']}',
+                  fit: BoxFit.contain,
+                )),
+            const SizedBox(
+              height: 20,
+            ),
+            Text(
+              '${secondpage['name']}',
+              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(
+              height: 30,
+            ),
+            Text(
+              '${secondpage['description']}',
+              style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w200),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            const Text(
+              'Places to Visit',
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
             Container(
-              height: 200,
+              height: 100,
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
@@ -34,11 +52,11 @@ class second extends StatelessWidget {
                     alignment: Alignment.topLeft,
                     height: 100,
                     width: 100,
-                    decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(20)),
+                    decoration: BoxDecoration(
+                      borderRadius: const BorderRadius.all(Radius.circular(20)),
                       image: DecorationImage(
                           image: NetworkImage(
-                            'https://i.scdn.co/image/ab67706f000000028db2eff84e356c34857f86b4',
+                            '${secondpage['image1']}',
                           ),
                           fit: BoxFit.fill),
                     ),
@@ -50,11 +68,11 @@ class second extends StatelessWidget {
                     alignment: Alignment.topLeft,
                     height: 100,
                     width: 100,
-                    decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(20)),
+                    decoration: BoxDecoration(
+                      borderRadius: const BorderRadius.all(Radius.circular(20)),
                       image: DecorationImage(
                           image: NetworkImage(
-                            'https://cms-fym.imgix.net/ox_Yn_AX_Da_R2_Cw_Rrnhv_Eal_515f388034.png?auto=compress,format&fit=fillmax&ch=Save-Data&w=1200&max-h=1200',
+                            '${secondpage['image2']}',
                           ),
                           fit: BoxFit.fill),
                     ),
@@ -66,25 +84,33 @@ class second extends StatelessWidget {
                     alignment: Alignment.topLeft,
                     height: 100,
                     width: 100,
-                    decoration: const BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(20)),
+                    decoration: BoxDecoration(
+                      borderRadius: const BorderRadius.all(Radius.circular(20)),
                       image: DecorationImage(
                           image: NetworkImage(
-                            'https://marketplace.canva.com/EAFSGSqc3MM/1/0/1600w/canva-red-minimalist-night-ride-playlist-cover-e46cEKrpFhQ.jpg',
+                            '${secondpage['image3']}',
                           ),
                           fit: BoxFit.fill),
                     ),
                   ),
                   const SizedBox(
                     width: 15,
-                  ),
+                  )
                 ],
               ),
             ),
             const SizedBox(
-              height: 15,
+              height: 20,
             ),
-            ElevatedButton(onPressed: () {}, child: const Text('Explore'))
+            ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15)),
+                  backgroundColor: Colors.purple[900],
+                  minimumSize: const Size.fromHeight(50),
+                ),
+                child: const Text('Explore'))
           ],
         ),
       ),
