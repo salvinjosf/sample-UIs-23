@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:sqflite/sqflite.dart' as sql;
 
 class SQLHelper {
@@ -34,9 +35,30 @@ class SQLHelper {
     return id;
   }
 
-  static Future<List<Map<String,dynamic>>> readNote() async{
+  static Future<List<Map<String, dynamic>>> readNote() async {
     final db = await SQLHelper.db();
     return db.query('notes', orderBy: 'id');
+  }
 
+  static Future<int> updateNote(
+      int id, String titlenew, String notenew) async {
+    final db = await SQLHelper.db();
+    final newdata = {
+      'title': titlenew,
+      'note': notenew,
+      'createdAt': DateTime.now().toString()
+    };
+    final updated =
+        await db.update('notes', newdata, where: 'id = ?', whereArgs: [id]);
+    return updated;
+  }
+
+  static Future<void> deleteNote(id) async {
+    final db = await SQLHelper.db();
+    try {
+      await db.delete('notes', where: 'id=?', whereArgs: [id]);
+    } catch (err) {
+      debugPrint('something went wrong');
+    }
   }
 }

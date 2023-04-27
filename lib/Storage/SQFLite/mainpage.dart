@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
-import 'SQLOp.dart';
+import 'SQLHelper.dart';
 
 void main() {
   runApp( MaterialApp(
     home: MainSQL(),
+
   ));
 }
 
@@ -38,7 +39,9 @@ class _MainSQLState extends State<MainSQL> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey,
       appBar: AppBar(
+        backgroundColor: Colors.blueGrey,
         title: const Text('My Notes'),
       ),
       body: Center(
@@ -53,8 +56,12 @@ class _MainSQLState extends State<MainSQL> {
                       width: 100,
                       child: Row(
                         children: [
-                          IconButton(onPressed: () {}, icon: Icon(Icons.edit)),
-                          IconButton(onPressed: () {}, icon: Icon(Icons.delete)),
+                          IconButton(onPressed: () {
+                            showForm(note_from_db[index]['id']);
+                          }, icon: Icon(Icons.edit)),
+                          IconButton(onPressed: () {
+                            delete(note_from_db[index]['id']);
+                          }, icon: Icon(Icons.delete)),
                         ],
                       ),
                     ),
@@ -73,6 +80,11 @@ class _MainSQLState extends State<MainSQL> {
   final note = TextEditingController();
 
   void showForm(int? id) async {
+    if(id != null){
+      final existingNote = note_from_db.firstWhere((note) => note['id']==id);
+      title.text = existingNote['title'];
+      note.text = existingNote['note'];
+    }
     showModalBottomSheet(
         context: context,
         elevation: 3,
@@ -82,7 +94,7 @@ class _MainSQLState extends State<MainSQL> {
                   left: 10,
                   right: 10,
                   top: 10,
-                  bottom: MediaQuery.of(context).viewInsets.bottom + 120),
+                  bottom: MediaQuery.of(context).viewInsets.bottom + 80),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.end,
@@ -104,7 +116,7 @@ class _MainSQLState extends State<MainSQL> {
                       await addNote();
                     }
                     if (id!=null){
-                      await updateNote();
+                      await updateNote(id);
                     }
                     title.text='';
                     note.text='';
@@ -116,10 +128,20 @@ class _MainSQLState extends State<MainSQL> {
             ));
   }
 
-  updateNote() {}
-
   Future addNote() async{
-    refreshData();
     await SQLHelper.createNote(title.text, note.text);
+    refreshData();
   }
+
+  Future<void> updateNote(int id) async{
+    await SQLHelper.updateNote(id, title.text, note.text);
+    refreshData();
+  }
+
+  void delete(int id) async{
+    await SQLHelper.deleteNote(id);
+    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('Note deleted'),));
+    refreshData();
+  }
+
 }
