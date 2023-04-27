@@ -2,6 +2,11 @@ Login and SignUp UI
 
 ![Urban](https://user-images.githubusercontent.com/124342493/225305443-4c4cc5b6-9d83-4c9d-971e-33fb3c8a50f8.png)
 
+Login and SignUp using Shared Prefernce
+
+![SharedPref Login](https://user-images.githubusercontent.com/124342493/234847187-a89e792a-51bc-4a52-bf2c-7aa846f38fd0.png)
+![SharedPref Signup](https://user-images.githubusercontent.com/124342493/234847218-a7329b38-2e78-4a5b-9489-1127cc5546dd.png)
+
 Contact Book UI
 
 ![Screenshot_2023-03-17_133231-removebg-preview](https://user-images.githubusercontent.com/124342493/225848356-08267ad5-7fde-45b0-a590-e44f0f8d8772.png)
