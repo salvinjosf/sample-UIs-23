@@ -16,6 +16,9 @@ Hotel UI
 ![Hotel_UI](https://user-images.githubusercontent.com/124342493/228519967-bf537a66-4e39-4db4-81d3-1c2cef5287c8.png)
 ![Hotel home](https://user-images.githubusercontent.com/124342493/232762305-a0084427-c4d8-4086-af93-dd7fff685174.png)
 
+![Tourism1](https://github.com/salvinjosf/sample-UIs-23/assets/124342493/3fe8f81b-9d5f-4435-a61d-0812254f5fbc)
+![Tourism2](https://github.com/salvinjosf/sample-UIs-23/assets/124342493/ccb0c0a3-e1d4-4038-9178-583024c78a1a)
+
 Cardex UI
 
 ![grid_dash](https://user-images.githubusercontent.com/124342493/231740288-e3b73939-f134-494f-a1b2-31464fa54c18.png)
