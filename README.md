@@ -33,3 +33,8 @@ Music App UI
 ![Playlist](https://user-images.githubusercontent.com/124342493/231745395-52043a16-b42f-4471-887a-68dc11921c5c.png)
 ![musify](https://user-images.githubusercontent.com/124342493/232551324-f23801c5-04da-43f4-927d-090d37a2f19b.png)
 
+QuoteApp
+
+![1q](https://github.com/salvinjosf/sample-UIs-23/assets/124342493/2d171420-6678-4980-bbcd-b9ec2b758cbb)
+![2q](https://github.com/salvinjosf/sample-UIs-23/assets/124342493/4ee208f2-121c-407c-a654-0712955b0f4d)
+
